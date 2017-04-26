@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>My Calculator</title>
+				
+			<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<link rel="stylesheet" type="text/css" href="cal.css">
+			<script src="cal.js"></script>
+		</head>
+	<body>
+		<div class="container-fluid">
+			<div class="container-fluid innercal span6 offset5">
+				<div class="calscreen">
+					<h3 id="screen"></h3>	
+					<p id="screenp"></p>
+				</div>
+				<div class=" container-fluid firstrow"> 
+					<input type="button" value="7" id="seven" class="button col-xs-4" onclick="document.getElementById('screen').innerHTML+='7';">
+					<input type="button" value="8" id="eight" class="button col-xs-4" onclick="document.getElementById('screen').innerHTML+='8';">
+					<input type="button" value="9" id="nine" class="button col-xs-4" onclick="document.getElementById('screen').innerHTML+='9';">
+				</div>
+				<div class=" container-fluid firstrow"> 
+					<input type="button" value="4" id="Four" class="button col-xs-4" onclick="document.getElementById('screen').innerHTML+='4';">
+					<input type="button" value="5" id="five" class="button col-xs-4" onclick="document.getElementById('screen').innerHTML+='5';">
+					<input type="button" value="6" id="six" class="button col-xs-4" onclick="document.getElementById('screen').innerHTML+='6';">
+				</div>
+				<div class=" container-fluid firstrow"> 
+					<input type="button" value="1" id="one" class="button col-xs-4" onclick="document.getElementById('screen').innerHTML+='1';">
+					<input type="button" value="2" id="two" class="button col-xs-4" onclick="document.getElementById('screen').innerHTML+='2';">
+					<input type="button" value="3" id="three" class="button col-xs-4" onclick="document.getElementById('screen').innerHTML+='3';">
+				</div>
+				<div class=" container-fluid firstrow"> 
+					<input type="button" value="0" id="zero" class="button col-xs-4" onclick="document.getElementById('screen').innerHTML+='0';">
+					<input type="button" value="C" id="ac" class="button col-xs-4" onclick="clearfun()">
+					<input type="button"  value="+" id="add" class="button col-xs-4" onclick="addition()">
+				</div>
+				<div class="container-fluid firstrow"> 
+					<input type="button" value="-" id="sub" class="button col-xs-4" onclick="subtraction()">
+					<input type="button" value="*" id="mul" class="button col-xs-4" onclick="multiplication()">
+					<input type="button"  value="/" id="divi" class="button col-xs-4" onclick="division()">
+				</div> 
+				<div>
+					<input type="button" value="=" id="result" class="button col-xs-12" onclick="equals()">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>  

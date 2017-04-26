@@ -1,0 +1,45 @@
+				.innercal {
+					height: 500px;
+					width: 40%;
+					border: 3px solid black;
+					margin-top: 80px;
+					border-radius: 10px;
+
+				}
+
+				.calscreen {
+					height: 115px;
+					padding:30px;
+					margin-top: 20px;
+					border: 2px solid black;
+					border-radius: 10px;
+					overflow: auto;
+					text-align: center;
+				}
+				.firstrow {
+					height: 55px;
+					margin-top: 5px;
+						
+				}
+				.button {
+					height: 42px;
+					padding: 3px;
+					border: 2px solid black;
+					margin-top: 5px;
+					border-radius: 10px;
+
+				}
+
+				input {
+					font-size: 20px;
+					font-weight: bold;
+				}
+				.button {
+				    -webkit-transition-duration: 0.4s;
+				    transition-duration: 0.4s;
+						}
+
+				.button:hover {
+					    background-color: #4CAF50;
+					    color: white;
+					}
